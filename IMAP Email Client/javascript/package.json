@@ -8,7 +8,7 @@
   "main": "imap.js",
   "dependencies": {
     "full-icu": "*",
-    "ipworks": "^22.0.8544"
+    "ipworks": "^22.0.8552"
   },
   "scripts": {
     "imap": "node imap.js"

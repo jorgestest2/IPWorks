@@ -1,7 +1,7 @@
 #
 # IPWorks 2022 C++ Edition - Demo Application
 #
-# Copyright (c) 2023 /n software inc. - All rights reserved. - www.nsoftware.com
+# Copyright (c) 2023 /n software inc. - www.nsoftware.com
 #
 
 ifeq ($(shell uname -s), "Darwin") # MACOS

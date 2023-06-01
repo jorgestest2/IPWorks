@@ -1,6 +1,11 @@
 /*
- * IPWorks 2022 .NET Edition - Demo Application
- * Copyright (c) 2023 /n software inc. - All rights reserved. - www.nsoftware.com
+ * IPWorks 2022 .NET Edition - Sample Project
+ *
+ * This sample project demonstrates the usage of one or more classes in a 
+ * simple, straightforward way.  This is not intended to be a complete 
+ * application. Error handling and other checks are simplified for clarity.
+ *
+ * Copyright (c) 2023 /n software inc. www.nsoftware.com
  */
 
 using System.Collections.Generic;
