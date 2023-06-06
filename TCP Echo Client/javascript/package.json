@@ -8,7 +8,7 @@
   "main": "echoclient.js",
   "dependencies": {
     "full-icu": "*",
-    "ipworks": "^22.0.8552"
+    "ipworks": "^22.0.8557"
   },
   "scripts": {
     "echoclient": "node echoclient.js"

@@ -8,7 +8,7 @@
   "main": "ldap.js",
   "dependencies": {
     "full-icu": "*",
-    "ipworks": "^22.0.8552"
+    "ipworks": "^22.0.8557"
   },
   "scripts": {
     "ldap": "node ldap.js"
