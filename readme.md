@@ -1,4 +1,4 @@
-# Sample Projects
+# IPWorks Samples
 These sample projects demonstrate the usage of the IPWorks components in a simple, 
 straightforward way.  They are not complete applications and they are not intended to be.
 Error handling and other checks are simplified for clarity.
@@ -49,9 +49,7 @@ Error handling and other checks are simplified for clarity.
 | [XMPP](./XMPP) | Uses the XMPP component to implement a simple Jabber instant messaging demo. |
 
 ## Requirements
-These sample projects require IPWorks 2022.  Please download from:
-
-> Download: [https://www.nsoftware.com/ipworks](https://www.nsoftware.com/ipworks)
+IPWorks 2022 libraries for the corresponding edition are required to run these samples.  Free download from: [https://www.nsoftware.com/ipworks](https://www.nsoftware.com/ipworks)
 
 ## Support
 If you have questions or need help, please contact support@nsoftware.com or explore other support options 
