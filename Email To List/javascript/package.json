@@ -8,7 +8,7 @@
   "main": "bulkmail.js",
   "dependencies": {
     "full-icu": "*",
-    "ipworks": "^22.0.8558"
+    "ipworks": "^22.0.8564"
   },
   "scripts": {
     "bulkmail": "node bulkmail.js"

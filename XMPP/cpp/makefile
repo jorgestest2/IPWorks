@@ -12,9 +12,8 @@ ifeq ($(shell uname -s), "Darwin") # MACOS
 R_PATH=-Wl,-rpath,../../lib64/,-rpath,.
 
 FRAMEWORK = -framework Carbon -framework Security
-LD_FLAGS = -lipworks.22.0 -L../../lib64/
-# EM: iconv is needed for multiple CBT products
-LD_FLAGS_SRC = -lz -ldl 
+LD_FLAGS = -lipworks.22.0 -L../../lib64/ libz.dylib libresolv.dylib
+LD_FLAGS_SRC = -lz libz.dylib libresolv.dylib
 OS_CFLAGS = -D UNIX64 -arch x86_64
 MACOS = "darwin% Darwin% macos%"
 
@@ -28,9 +27,8 @@ else
 endif
 
 R_PATH=-Wl,-rpath,../../$(LIB)/,-rpath,.
-LD_FLAGS = -lipworks  -L../../$(LIB)/
-LD_FLAGS_SRC = -lz -ldl 
-# EM: enabling code generator options for hardware-accelerated encryption
+LD_FLAGS = -lipworks  -L../../$(LIB)/ 
+LD_FLAGS_SRC = -lz 
 
 all:
 	g++ -D UNIX -o jabber jabber.cpp  -I../../include/ $(LD_FLAGS) $(R_PATH) 
