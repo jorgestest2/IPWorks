@@ -1,4 +1,4 @@
-# IPWorks Samples
+# IPWorks Sample Projects
 The provided sample projects offer a concise yet effective demonstration of the IPWorks components, showcasing their usage in a straightforward manner. While they are not intended to be complete applications, they serve as valuable illustrations of key features. To enhance clarity, error handling and checks are simplified, allowing users to focus on the core functionality. These projects provide a solid foundation for developers to explore and customize, enabling them to construct more elaborate applications while understanding the fundamental concepts and mechanisms at play.
 
 | Sample Project | Description |
