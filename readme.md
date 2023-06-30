@@ -1,4 +1,4 @@
-# IPWorks Sample Projects
+﻿# IPWorks Sample Projects
 The provided sample projects offer a concise yet effective demonstration of the IPWorks components, showcasing their usage in a straightforward manner. While they are not intended to be complete applications, they serve as valuable illustrations of key features. To enhance clarity, error handling and checks are simplified, allowing users to focus on the core functionality. These projects provide a solid foundation for developers to explore and customize, enabling them to construct more elaborate applications while understanding the fundamental concepts and mechanisms at play.
 
 | Sample Project | Description |
@@ -34,13 +34,10 @@ The provided sample projects offer a concise yet effective demonstration of the 
 | [Syslog Server](./Syslog%20Server) | Shows how to use the Syslog component to receive and send syslog packets. |
 | [TCP Echo Client](./TCP%20Echo%20Client) | A simple TCP echo client.  It demonstrates the use of TCPClient to build the simplest TCP/IP client.  Use in conjunction with the TCP Echo Server demo. |
 | [TCP Echo Server](./TCP%20Echo%20Server) | A simple TCP echo server.  It demonstrates the use of TCPServer to build the simplest TCP/IP server.  Use in conjunction with the TCP Echo Client demo. |
-| [TFTP Client](./TFTP%20Client) | A simple demonstration of how to use TFTP to copy files to and from a TFTP server. |
 | [TFTP Server](./TFTP%20Server) | Shows how to build a simple TFTP Server. |
-| [Telnet Client](./Telnet%20Client) | A simple demo of the Telnet component.  Shows how to use the component to build a Telnet client. |
 | [Time Synchronization](./Time%20Synchronization) | Shows how to get the time from a network time server and synchronize the PC clock with it. |
 | [TraceRoute](./TraceRoute) | Demonstrates the use of the TraceRoute component. |
 | [UDP Echo Client](./UDP%20Echo%20Client) | Sends a broadcast message on the ECHO port to all the machines in a LAN and measures the time it takes them to respond. |
-| [UDP Time Client](./UDP%20Time%20Client) | Sends a broadcast message on the TIME port to all the machines in a LAN. |
 | [WebDAV Client](./WebDAV%20Client) | Allows you to copy files back and forth between a DAV server and localhost. |
 | [WebSocket Client](./WebSocket%20Client) | Shows how to use the WebSocketClient component to send and receive data. |
 | [WebSocket Server](./WebSocket%20Server) | Uses the WebSocketServer component to create a simple WebSocket server. |
@@ -53,3 +50,4 @@ IPWorks 2022 libraries for the corresponding edition are required to run these s
 ## Support
 If you have questions or need help, please contact support@nsoftware.com or explore other support options 
 at www.nsoftware.com.
+

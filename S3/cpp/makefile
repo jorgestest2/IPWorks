@@ -8,17 +8,24 @@
 # Copyright (c) 2023 /n software inc. www.nsoftware.com
 # 
 
-ifeq ($(shell uname -s), "Darwin") # MACOS
+ifeq ($(shell uname -s), Darwin) # MACOS
 R_PATH=-Wl,-rpath,../../lib64/,-rpath,.
 
 FRAMEWORK = -framework Carbon -framework Security
-LD_FLAGS = -lipworks.22.0 -L../../lib64/ libz.dylib libresolv.dylib
-LD_FLAGS_SRC = -lz libz.dylib libresolv.dylib
-OS_CFLAGS = -D UNIX64 -arch x86_64
+LD_FLAGS = -lipworks.22.0 -L../../lib64/ -lresolv
+LD_FLAGS_SRC = -lz -lresolv
+OS_CFLAGS = -D UNIX -arch arm64
 MACOS = "darwin% Darwin% macos%"
 
 all:
-	g++ $(OS_CFLAGS) -D UNIX -o s3 s3.cpp  -I../../include/ $(LD_FLAGS) $(FRAMEWORK) $(R_PATH) 
+	g++ $(OS_CFLAGS) -D UNIX -o s3 s3.cpp  -I../../include/ $(LD_FLAGS) $(FRAMEWORK) $(R_PATH)
+
+src: ../../src/ipworks.o
+	g++ $(OS_CFLAGS) -o s3 ../../src/ipworks.o s3.cpp  $(LD_FLAGS_SRC) $(FRAMEWORK)
+
+../../src/ipworks.o:
+	g++ -c -fno-exceptions -fno-rtti -fPIC -arch arm64 -o ../../src/ipworks.o ../../src/ipworks.cpp
+
 else # LINUX
 ifeq ($(shell uname -m), x86_64)
   LIB=lib64

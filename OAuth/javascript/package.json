@@ -8,7 +8,7 @@
   "main": "oauth.js",
   "dependencies": {
     "full-icu": "*",
-    "ipworks": "^22.0.8564"
+    "ipworks": "^22.0.8581"
   },
   "scripts": {
     "oauth": "node oauth.js"
